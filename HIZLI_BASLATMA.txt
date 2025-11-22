@@ -1,0 +1,67 @@
+═══════════════════════════════════════════════════════════════
+  BÜTÇE SERVİSİ - HIZLI BAŞLATMA REHBERİ
+═══════════════════════════════════════════════════════════════
+
+ADIM 1: .env Dosyası Oluşturun
+───────────────────────────────────────────────────────────────
+1. "client" klasörüne gidin
+2. Yeni bir dosya oluşturun ve adını ".env" yapın
+   (Dosya adı sadece ".env" olmalı, uzantı yok!)
+3. İçine şunu yazın:
+   PORT=3001
+
+ADIM 2: Backend'i Başlatın
+───────────────────────────────────────────────────────────────
+1. PowerShell veya Command Prompt açın
+2. Şu komutları çalıştırın:
+
+   cd "C:\Users\bused\OneDrive\Masaüstü\bütceservis\server"
+   npm run dev
+
+3. "Server 5000 portunda çalışıyor" mesajını bekleyin
+4. Bu pencereyi AÇIK BIRAKIN
+
+ADIM 3: Frontend'i Başlatın (YENİ PENCERE)
+───────────────────────────────────────────────────────────────
+1. YENİ bir PowerShell veya Command Prompt açın
+2. Şu komutları çalıştırın:
+
+   cd "C:\Users\bused\OneDrive\Masaüstü\bütceservis\client"
+   npm start
+
+3. Tarayıcı otomatik açılacak
+4. Eğer açılmazsa: http://localhost:3001 adresine gidin
+
+═══════════════════════════════════════════════════════════════
+KONTROL
+═══════════════════════════════════════════════════════════════
+
+Backend çalışıyor mu?
+→ http://localhost:5000/api/health
+→ "Bütçe Servisi API çalışıyor" mesajını görmelisiniz
+
+Frontend çalışıyor mu?
+→ http://localhost:3001
+→ Web arayüzü açılmalı
+
+═══════════════════════════════════════════════════════════════
+SORUN GİDERME
+═══════════════════════════════════════════════════════════════
+
+❌ "npm run dev" çalışmıyor
+   → "npm install" yapın (server klasöründe)
+
+❌ "npm start" çalışmıyor  
+   → "npm install" yapın (client klasöründe)
+
+❌ Port zaten kullanılıyor
+   → O portu kullanan uygulamayı kapatın
+   → Veya .env dosyasında PORT=3002 deneyin
+
+❌ Bağlantı reddedildi
+   → Her iki sunucunun da çalıştığından emin olun
+   → Terminal'de hata mesajı var mı kontrol edin
+
+═══════════════════════════════════════════════════════════════
+
+

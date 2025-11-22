@@ -1,0 +1,50 @@
+═══════════════════════════════════════════════════════════════
+  FRONTEND BAŞLATMA - ADIM ADIM
+═══════════════════════════════════════════════════════════════
+
+Frontend'i başlatmak için 2 yöntem var:
+
+YÖNTEM 1: .env Dosyası Oluşturun (ÖNERİLEN)
+───────────────────────────────────────────────────────────────
+1. "client" klasörüne gidin
+2. Yeni bir metin dosyası oluşturun
+3. Dosya adını ".env" yapın (uzantı yok!)
+4. İçine şunu yazın:
+   PORT=3001
+5. Kaydedin
+6. Terminal'de şunu çalıştırın:
+   cd client
+   npm start
+
+YÖNTEM 2: Manuel Port Belirtme
+───────────────────────────────────────────────────────────────
+Terminal'de (PowerShell veya CMD):
+
+PowerShell için:
+   cd client
+   $env:PORT=3001; npm start
+
+Command Prompt (CMD) için:
+   cd client
+   set PORT=3001 && npm start
+
+───────────────────────────────────────────────────────────────
+
+SORUN GİDERME:
+───────────────────────────────────────────────────────────────
+
+❌ "npm start" çalışmıyor
+   → Önce şunu deneyin: cd client && npm install
+
+❌ Port 3001 zaten kullanılıyor
+   → .env dosyasında PORT=3002 deneyin
+
+❌ "react-scripts" bulunamadı
+   → cd client && npm install
+
+❌ Başka hata alıyorsanız
+   → Terminal'deki tam hata mesajını paylaşın
+
+═══════════════════════════════════════════════════════════════
+
+

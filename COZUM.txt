@@ -1,0 +1,46 @@
+═══════════════════════════════════════════════════════════════
+  FRONTEND BAŞLATMA - KESIN ÇÖZÜM
+═══════════════════════════════════════════════════════════════
+
+ADIM 1: cross-env Paketini Yükleyin
+───────────────────────────────────────────────────────────────
+PowerShell'de şu komutları çalıştırın:
+
+   cd client
+   npm install cross-env --save-dev
+
+ADIM 2: Frontend'i Başlatın
+───────────────────────────────────────────────────────────────
+Aynı terminal'de:
+
+   npm start
+
+Bu komut frontend'i otomatik olarak port 3001'de başlatacak.
+
+═══════════════════════════════════════════════════════════════
+
+ALTERNATIF: .env Dosyası Yöntemi
+───────────────────────────────────────────────────────────────
+Eğer cross-env yüklemesi çalışmazsa:
+
+1. "client" klasörüne gidin
+2. Yeni bir metin dosyası oluşturun
+3. Dosya adını ".env" yapın (uzantı yok!)
+4. İçine şunu yazın:
+   PORT=3001
+5. Kaydedin
+6. Terminal'de: npm start
+
+═══════════════════════════════════════════════════════════════
+
+EN KOLAY YÖNTEM: Hazır Script
+───────────────────────────────────────────────────────────────
+"client" klasöründeki "baslat-frontend.bat" dosyasına çift tıklayın.
+
+Veya PowerShell'de:
+   cd client
+   .\baslat-frontend.bat
+
+═══════════════════════════════════════════════════════════════
+
+
